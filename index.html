@@ -8,27 +8,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RoboCrowd: Scaling Robot Data Collection through Crowdsourcing</title>
 
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-  </script>
-
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  p
+  
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -75,7 +66,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="./static/pdfs/robocrowd_full.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -84,7 +75,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href=""
+                <a href="./static/pdfs/robocrowd_appendix.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -155,22 +146,6 @@
 </section> -->
 
 
-<!-- <section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -201,7 +176,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+          <iframe src=""
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
@@ -210,24 +185,92 @@
 </section>
 
 
-<!-- <section class="section">
+<section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Heading</h2>
+        <h2 class="title is-3">Dataset Samples</h2>
 
-        <h3 class="title is-4">Subheading</h3>
+        <h3 class="title is-4">Sample Expert Demonstrations</h3>
+        <p>
+          Below are sample videos of expert demonstrations for each of the six tasks.
+        </p>
         <div class="content has-text-justified">
-          <p>
-            Text.
-          </p>
+          <p>hi-chew</p>
+          <video width="100%" autoplay="" loop="" muted="" controls="">
+            <source src="static/videos/expert-hi-chew-web.mp4" type="video/mp4">
+          </video>
+          <p>tootsie-roll</p>
+          <video width="100%" autoplay="" loop="" muted="" controls="">
+            <source src="static/videos/expert-tootsie-roll-web.mp4" type="video/mp4">
+          </video>
+          <p>hershey-kiss</p>
+          <video width="100%" autoplay="" loop="" muted="" controls="">
+            <source src="static/videos/expert-hershey-kiss-web.mp4" type="video/mp4">
+          </video>
+          <p>jelly-bean</p>
+          <video width="100%" autoplay="" loop="" muted="" controls="">
+            <source src="static/videos/expert-jelly-bean-web.mp4" type="video/mp4">
+          </video>
+          <p>hi-chew-bin</p>
+          <video width="100%" autoplay="" loop="" muted="" controls="">
+            <source src="static/videos/expert-hi-chew-bin-web.mp4" type="video/mp4">
+          </video>
+          <p>hi-chew-ziploc</p>
+          <video width="100%" autoplay="" loop="" muted="" controls="">
+            <source src="static/videos/expert-hi-chew-ziploc-web.mp4" type="video/mp4">
+          </video>
+          <p>tool-ziploc (Fine-Tuning Task)</p>
+          <video width="100%" autoplay="" loop="" muted="" controls="">
+            <source src="static/videos/expert-tool-ziploc-web.mp4" type="video/mp4">
+          </video>
+        </div>
+        <h3 class="title is-4"></h3>
+        <h3 class="title is-4">Sample Crowdsourced Interactions</h3>
+        <p>
+          Below are sample crowdsourced episodes from the dataset, illustrating the behavior and quality of the interactions.
+        </p>
+        <div class="content has-text-justified">
+          <p>Example #1</p>
+          <video width="100%" autoplay="" loop="" muted="" controls="">
+            <source src="static/videos/crowd-1-web.mp4" type="video/mp4">
+          </video>
+          <p>Example #2</p>
+          <video width="100%" autoplay="" loop="" muted="" controls="">
+            <source src="static/videos/crowd-2-web.mp4" type="video/mp4">
+          </video>
+          <p>Example #3</p>
+          <video width="100%" autoplay="" loop="" muted="" controls="">
+            <source src="static/videos/crowd-3-web.mp4" type="video/mp4">
+          </video>
+          <p>Example #4</p>
+          <video width="100%" autoplay="" loop="" muted="" controls="">
+            <source src="static/videos/crowd-4-web.mp4" type="video/mp4">
+          </video>
+          <p>Example #5</p>
+          <video width="100%" autoplay="" loop="" muted="" controls="">
+            <source src="static/videos/crowd-5-web.mp4" type="video/mp4">
+          </video>
+          <p>Example #6</p>
+          <video width="100%" autoplay="" loop="" muted="" controls="">
+            <source src="static/videos/crowd-6-web.mp4" type="video/mp4">
+          </video>
+          <p>Example #7</p>
+          <video width="100%" autoplay="" loop="" muted="" controls="">
+            <source src="static/videos/crowd-7-web.mp4" type="video/mp4">
+          </video>
+          <p>Example #8</p>
+          <video width="100%" autoplay="" loop="" muted="" controls="">
+            <source src="static/videos/crowd-8-web.mp4" type="video/mp4">
+          </video>
 
+        </div>
       </div>
     </div>
 
   </div>
-</section> -->
+</section>
 
 
 <!-- <section class="section" id="BibTeX">

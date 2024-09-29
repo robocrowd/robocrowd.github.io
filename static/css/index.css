@@ -2,6 +2,68 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
+video {
+  border-radius: 10px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.video-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.video-wrapper video {
+  width: 100%;
+}
+
+.video-divider {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.video-divider-left {
+  left: 33.33%;
+}
+
+.video-divider-right {
+  left: 66.66%;
+}
+
+.video-label {
+  position: absolute;
+  top: 5px;
+  color: white;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.video-label-top {
+  left: 10px;
+}
+
+.video-label-left {
+  left: 35%;
+}
+
+.video-label-right {
+  left: 68%;
+}
 
 .footer .icon-link {
     font-size: 25px;

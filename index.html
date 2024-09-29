@@ -88,40 +88,13 @@
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
+                      <i class="fab fa-youtube"></i>
+                      <i class="fab fa-github"></i>
+                      <i class="far fa-images"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
               </span> -->
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
-              <!-- Code Link. -->
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span> -->
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
-                </span> -->
             </div>
 
           </div>
@@ -192,79 +165,72 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Dataset Samples</h2>
 
+
         <h3 class="title is-4">Sample Expert Demonstrations</h3>
         <p>
-          Below are sample videos of expert demonstrations for each of the six tasks.
+          Select one of the tasks below to view an expert trajectory for that task.
+          <br>
+          <br>
         </p>
         <div class="content has-text-justified">
-          <p>hi-chew</p>
-          <video width="100%" autoplay="" loop="" muted="" controls="">
-            <source src="static/videos/expert-hi-chew-web.mp4" type="video/mp4">
-          </video>
-          <p>tootsie-roll</p>
-          <video width="100%" autoplay="" loop="" muted="" controls="">
-            <source src="static/videos/expert-tootsie-roll-web.mp4" type="video/mp4">
-          </video>
-          <p>hershey-kiss</p>
-          <video width="100%" autoplay="" loop="" muted="" controls="">
-            <source src="static/videos/expert-hershey-kiss-web.mp4" type="video/mp4">
-          </video>
-          <p>jelly-bean</p>
-          <video width="100%" autoplay="" loop="" muted="" controls="">
-            <source src="static/videos/expert-jelly-bean-web.mp4" type="video/mp4">
-          </video>
-          <p>hi-chew-bin</p>
-          <video width="100%" autoplay="" loop="" muted="" controls="">
-            <source src="static/videos/expert-hi-chew-bin-web.mp4" type="video/mp4">
-          </video>
-          <p>hi-chew-ziploc</p>
-          <video width="100%" autoplay="" loop="" muted="" controls="">
-            <source src="static/videos/expert-hi-chew-ziploc-web.mp4" type="video/mp4">
-          </video>
-          <p>tool-ziploc (Fine-Tuning Task)</p>
-          <video width="100%" autoplay="" loop="" muted="" controls="">
-            <source src="static/videos/expert-tool-ziploc-web.mp4" type="video/mp4">
-          </video>
+          <div class="task-selector has-text-centered">
+            <button class="button is-light" onclick="changeTask('hi-chew', 'static/videos/expert-hi-chew-web.mp4')">hi-chew</button>
+            <button class="button is-light" onclick="changeTask('tootsie-roll', 'static/videos/expert-tootsie-roll-web.mp4')">tootsie-roll</button>
+            <button class="button is-light" onclick="changeTask('jelly-bean', 'static/videos/expert-jelly-bean-web.mp4')">jelly-bean</button>
+            <button class="button is-light" onclick="changeTask('hershey-kiss', 'static/videos/expert-hershey-kiss-web.mp4')">hershey-kiss</button>
+            <button class="button is-light" onclick="changeTask('hi-chew-bin', 'static/videos/expert-hi-chew-bin-web.mp4')">hi-chew-bin</button>
+            <button class="button is-light" onclick="changeTask('hi-chew-ziploc', 'static/videos/expert-hi-chew-ziploc-web.mp4')">hi-chew-ziploc</button>
+            <button class="button is-light" onclick="changeTask('tool-ziploc', 'static/videos/expert-tool-ziploc-web.mp4')">tool-ziploc</button>
+
+          </div>
+          
+          <div id="task-video" class="video-container">
+            <h4 id="video-title" class="video-title"></h4>
+            <div class="video-wrapper">
+              <video id="task-video-player" autoplay loop muted controls>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="video-divider video-divider-left"></div>
+              <div class="video-divider video-divider-right"></div>
+              <div class="video-label video-label-top"><i class="fas fa-video"></i> Top</div>
+              <div class="video-label video-label-left"><i class="fas fa-video"></i> Left</div>
+              <div class="video-label video-label-right"><i class="fas fa-video"></i> Right</div>
+            </div>
+          </div>
         </div>
         <h3 class="title is-4"></h3>
         <h3 class="title is-4">Sample Crowdsourced Interactions</h3>
         <p>
-          Below are sample crowdsourced episodes from the dataset, illustrating the behavior and quality of the interactions.
+          Select one of the examples below to view a sample crowdsourced interaction from the dataset.
+          <br>
+          <br>
         </p>
         <div class="content has-text-justified">
-          <p>Example #1</p>
-          <video width="100%" autoplay="" loop="" muted="" controls="">
-            <source src="static/videos/crowd-1-web.mp4" type="video/mp4">
-          </video>
-          <p>Example #2</p>
-          <video width="100%" autoplay="" loop="" muted="" controls="">
-            <source src="static/videos/crowd-2-web.mp4" type="video/mp4">
-          </video>
-          <p>Example #3</p>
-          <video width="100%" autoplay="" loop="" muted="" controls="">
-            <source src="static/videos/crowd-3-web.mp4" type="video/mp4">
-          </video>
-          <p>Example #4</p>
-          <video width="100%" autoplay="" loop="" muted="" controls="">
-            <source src="static/videos/crowd-4-web.mp4" type="video/mp4">
-          </video>
-          <p>Example #5</p>
-          <video width="100%" autoplay="" loop="" muted="" controls="">
-            <source src="static/videos/crowd-5-web.mp4" type="video/mp4">
-          </video>
-          <p>Example #6</p>
-          <video width="100%" autoplay="" loop="" muted="" controls="">
-            <source src="static/videos/crowd-6-web.mp4" type="video/mp4">
-          </video>
-          <p>Example #7</p>
-          <video width="100%" autoplay="" loop="" muted="" controls="">
-            <source src="static/videos/crowd-7-web.mp4" type="video/mp4">
-          </video>
-          <p>Example #8</p>
-          <video width="100%" autoplay="" loop="" muted="" controls="">
-            <source src="static/videos/crowd-8-web.mp4" type="video/mp4">
-          </video>
-
+          <div class="crowd-selector">
+            <div class="buttons has-addons is-centered">
+              <button class="button is-light" onclick="changeCrowdVideo('Example #1', 'static/videos/crowd-1-web.mp4')">Example #1</button>
+              <button class="button is-light" onclick="changeCrowdVideo('Example #2', 'static/videos/crowd-2-web.mp4')">Example #2</button>
+              <button class="button is-light" onclick="changeCrowdVideo('Example #3', 'static/videos/crowd-3-web.mp4')">Example #3</button>
+              <button class="button is-light" onclick="changeCrowdVideo('Example #4', 'static/videos/crowd-4-web.mp4')">Example #4</button>
+              <button class="button is-light" onclick="changeCrowdVideo('Example #5', 'static/videos/crowd-5-web.mp4')">Example #5</button>
+              <button class="button is-light" onclick="changeCrowdVideo('Example #6', 'static/videos/crowd-6-web.mp4')">Example #6</button>
+              <button class="button is-light" onclick="changeCrowdVideo('Example #7', 'static/videos/crowd-7-web.mp4')">Example #7</button>
+              <button class="button is-light" onclick="changeCrowdVideo('Example #8', 'static/videos/crowd-8-web.mp4')">Example #8</button>
+            </div>
+          </div>
+          <div id="crowd-video" class="video-container">
+            <h4 id="crowd-video-title" class="video-title"></h4>
+            <div class="video-wrapper">
+              <video id="crowd-video-player" autoplay loop muted controls>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="video-divider video-divider-left"></div>
+              <div class="video-divider video-divider-right"></div>
+              <div class="video-label video-label-top"><i class="fas fa-video"></i> Top</div>
+              <div class="video-label video-label-left"><i class="fas fa-video"></i> Left</div>
+              <div class="video-label video-label-right"><i class="fas fa-video"></i> Right</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -273,18 +239,18 @@
 </section>
 
 
-<!-- <section class="section" id="BibTeX">
+<section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>
-      @article{mirchandani2024robocrowd,
-        title   = {RoboCrowd: Scaling Robot Data Collection through Crowdsourcing},
-        author  = {Suvir Mirchandani and David D. Yuan and Kaylee Burns and Md Sazzad Islam and Tony Z. Zhao and Chelsea Finn and Dorsa Sadigh},
-        year    = {2024},
-    }
+@article{mirchandani2024robocrowd,
+    title   = {RoboCrowd: Scaling Robot Data Collection through Crowdsourcing},
+    author  = {Suvir Mirchandani and David D. Yuan and Kaylee Burns and Md Sazzad Islam and Tony Z. Zhao and Chelsea Finn and Dorsa Sadigh},
+    year    = {2024},
+}
     </code></pre>
   </div>
-</section> -->
+</section>
 
 
 <footer class="footer">
